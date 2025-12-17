@@ -15,10 +15,10 @@ export const HomePage: React.FC = () => {
             Connect with licensed therapists, practice wellness tools, and prioritize your mental health.
           </p>
           <div className="hero-cta">
-            <Link to="/login" className="btn btn-primary btn-lg">
+            <Link to="/login" className="btn btn-primary button btn-lg">
               Start Your Journey
             </Link>
-            <Link to="/contact" className="btn btn-primary btn-lg">
+            <Link to="/contact" className="btn btn-primary button btn-lg">
               Learn More
             </Link>
           </div>
@@ -53,8 +53,8 @@ export const HomePage: React.FC = () => {
                 <p>Get immediate support</p>
               </div>
             </div>
-            <a href="tel:988" className="btn btn-danger btn-lg">
-              Call 988 (24/7)
+            <a href="tel:999" className="btn btn-danger btn-lg">
+              Call 999 (24/7)
             </a>
           </div>
         </div>
@@ -120,7 +120,7 @@ export const HomePage: React.FC = () => {
                   <span className="rating-value">{therapist.rating}</span>
                 </div>
                 <p className="therapist-bio">{therapist.bio}</p>
-                <Link to="/therapists" className="btn btn-primary btn-sm">
+                <Link to="/therapists" className="btn btn-primary btn-sm button">
                   View Profile
                 </Link>
               </div>
@@ -191,10 +191,10 @@ export const HomePage: React.FC = () => {
             <h2>Ready to Start Your Wellness Journey?</h2>
             <p>Join thousands of people prioritizing their mental health with MindCare.</p>
             <div className="cta-buttons">
-              <Link to="/login" className="btn btn-primary btn-lg">
+              <Link to="/login" className="btn btn-primary btn-lg button">
                 Create Account
               </Link>
-              <Link to="/services" className="btn btn-outline btn-lg">
+              <Link to="/services" className="btn btn-primary btn-lg button">
                 Explore Services
               </Link>
             </div>

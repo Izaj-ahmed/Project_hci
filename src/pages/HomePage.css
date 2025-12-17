@@ -86,13 +86,13 @@
 
 /* Emergency Section */
 .emergency-section {
-  
+  background-color: var(--bg-secondary);
   padding: 2rem 1rem;
   margin: 2rem 0;
 }
 
 .emergency-banner {
-  background: linear-gradient(135deg, #7298ff, #2687e1f3);
+  background: linear-gradient(135deg, #7298ff, #137adaf3);
   color: white;
   padding: 2rem;
   border-radius: var(--border-radius-lg);
@@ -233,7 +233,6 @@
 .therapist-image {
   width: 100%;
   height: 200px;
-  object-fit: cover;
 }
 
 .therapist-card h3 {
@@ -410,6 +409,10 @@
   display: flex;
   gap: 0.25rem;
   margin-bottom: 1rem;
+}
+
+.button:hover{
+  color: rgb(236, 176, 87);
 }
 
 .testimonial-rating .star {

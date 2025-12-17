@@ -58,7 +58,7 @@ export const MOCK_WELLNESS_RESOURCES = [
     category: 'exercise',
     duration: 5,
     difficulty: 'beginner',
-    image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400',
+    image: 'https://i.ibb.co.com/Fbq7f6mK/relaxed-man-breathing-fresh-air.jpg',
     tags: ['breathing', 'anxiety', 'quick'],
   },
   {
@@ -79,7 +79,7 @@ export const MOCK_WELLNESS_RESOURCES = [
     content: 'Anxiety is a natural response...',
     category: 'article',
     difficulty: 'beginner',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400',
+    image: 'https://i.ibb.co.com/SX17zMRP/work-burnout-anxiety-and-mental-health-with-woman-sad-worker-problem-or-fail-at-company-with.jpg',
     tags: ['anxiety', 'education', 'tips'],
   },
   {
@@ -89,7 +89,7 @@ export const MOCK_WELLNESS_RESOURCES = [
     content: 'Cognitive Behavioral Therapy focuses on...',
     category: 'cbt',
     difficulty: 'intermediate',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400',
+    image: 'https://i.ibb.co.com/Mxm6T5gp/shot-of-a-unrecognizable-woman-sitting-on-a-sofa-and-feeling-anxious.jpg',
     tags: ['cbt', 'thoughts', 'behavior'],
   },
 ];

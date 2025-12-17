@@ -17,6 +17,8 @@ import SettingsPage from './pages/SettingsPage';
 import AppointmentsPage from './pages/AppointmentsPage';
 import AnalyticsPage from './pages/AnalyticsPage';
 import ChatBotPage from './pages/ChatBotPage';
+import AboutPage from './pages/AboutPage';
+import ServicesPage from './pages/ServicesPage';
 
 import './App.css';
 
@@ -36,6 +38,8 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/analytics" element={<AnalyticsPage />} />
           <Route path="/chatbot" element={<ChatBotPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
 
           {/* Protected Routes */}
           <Route
