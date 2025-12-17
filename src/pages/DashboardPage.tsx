@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 import { useAuthStore, useMoodStore, useAppointmentStore } from '../store';
 import { Activity, TrendingUp, Heart, Clock, Zap } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
@@ -118,26 +119,27 @@ export const DashboardPage: React.FC = () => {
         <div className="dashboard-section">
           <h2>🚀 Quick Actions</h2>
           <div className="actions-grid">
-            <a href="/resources" className="action-card">
+            {/* Replace <a> with <Link> */}
+            <Link to="/resources" className="action-card">
               <Zap size={32} />
               <h3>Wellness Tools</h3>
               <p>Guided meditations & exercises</p>
-            </a>
-            <a href="/therapists" className="action-card">
+            </Link>
+            <Link to="/therapists" className="action-card">
               <Activity size={32} />
               <h3>Book Therapist</h3>
               <p>Connect with a professional</p>
-            </a>
-            <a href="/journal" className="action-card">
+            </Link>
+            <Link to="/journal" className="action-card">
               <Heart size={32} />
               <h3>Journal Entry</h3>
               <p>Express your thoughts</p>
-            </a>
-            <a href="/assessments" className="action-card">
+            </Link>
+            <Link to="/assessments" className="action-card">
               <TrendingUp size={32} />
               <h3>Mental Health Check</h3>
               <p>Take a quick assessment</p>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -154,9 +156,10 @@ export const DashboardPage: React.FC = () => {
                     </p>
                     <p className="appointment-type">{apt.type?.toUpperCase()} • {apt.duration} min</p>
                   </div>
-                  <a href={`/appointments/${apt.id}`} className="btn btn-sm btn-primary">
+                  {/* You might want to create a dynamic route for appointments */}
+                  <Link to={`/appointments/${apt.id}`} className="btn btn-sm btn-primary">
                     Join
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>
@@ -170,23 +173,23 @@ export const DashboardPage: React.FC = () => {
             <div className="recommendation-card">
               <h4>Start Your Day with Meditation</h4>
               <p>A 5-minute morning meditation can improve focus and reduce anxiety throughout the day.</p>
-              <a href="/resources" className="btn btn-sm btn-outline">
+              <Link to="/resources" className="btn btn-sm btn-outline">
                 Explore
-              </a>
+              </Link>
             </div>
             <div className="recommendation-card">
               <h4>Sleep Better Tonight</h4>
               <p>Try our guided sleep meditation to improve your sleep quality.</p>
-              <a href="/resources" className="btn btn-sm btn-outline">
+              <Link to="/resources" className="btn btn-sm btn-outline">
                 Start
-              </a>
+              </Link>
             </div>
             <div className="recommendation-card">
               <h4>Connect with Support</h4>
               <p>Consider scheduling a therapy session to discuss your recent mood patterns.</p>
-              <a href="/therapists" className="btn btn-sm btn-outline">
+              <Link to="/therapists" className="btn btn-sm btn-outline">
                 Browse
-              </a>
+              </Link>
             </div>
           </div>
         </div>
